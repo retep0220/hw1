@@ -6,12 +6,13 @@
 //
 
 #include <iostream>
+#include <stdlib.h>
 using namespace std;
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    int a = 0, big = 0;
-    a = *argv[1] - 48;
+    int big = 0;
+    int a = atoi(argv[1]);
     for (int i = 0; i <= a; i++) {
         cout << "(" << i << "," << a-i << ")\n";
         if ((a - i) * i > big) {
